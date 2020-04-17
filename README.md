@@ -1,3 +1,3 @@
 # Node-Files-Server
 
-# Implementing a simple file server with Node
+Implementing a simple file server with Node
