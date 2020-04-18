@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Make a comment</title>
+  <link rel="stylesheet" href="/public/lib/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">留言簿</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <span class="nav-item nav-link active">发表评论</span>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br>
+  <div class="container">
+    <form action="/comment" method="get">
+      <div class="form-group">
+        <label for="input_name">Nickname</label>
+        <input type="text" class="form-control" name="user" required minlength="2" maxlength="10" id="input_name" placeholder="Your name here.">
+      </div>
+      <div class="form-group">
+        <label for="textarea_message">Message</label>
+        <textarea class="form-control" name="msg" id="textarea_message" cols="30" rows="10" required minlength="5" maxlength="140" placeholder="Your message here."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+  </div>
+</body>
+</html>
