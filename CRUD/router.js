@@ -9,7 +9,7 @@
 const express = require('express')
 
 // curd 封装了文件处理的逻辑
-const curd = require('./public/js/curd')
+const curd = require('./public/js/curd-fs')
 const errHandle = require('./public/js/error')
 
 // 1. 创建一个路由容器
