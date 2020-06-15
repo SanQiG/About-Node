@@ -81,10 +81,18 @@
             <label for="">性别</label>
             <div>
               <label class="radio-inline">
+                {{ if student.gender == 0 }}
+                <input type="radio" name="gender" value="0" checked>男
+                {{ else }}
                 <input type="radio" name="gender" value="0">男
+                {{ /if }}
               </label>
               <label class="radio-inline">
+                {{ if student.gender == 1 }}
+                <input type="radio" name="gender" value="1" checked>女
+                {{ else }}
                 <input type="radio" name="gender" value="1">女
+                {{ /if }}
               </label>
             </div>
           </div>
